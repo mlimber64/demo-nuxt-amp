@@ -1,5 +1,5 @@
 import axios from 'axios'
-const baseURL = `https://www.omdbapi.com/?apikey=${process.env.apikey}`
+const baseURL = `https://www.omdbapi.com/?apikey=7f517297`
 
 export async function getMovies(keyword, year , page = 1)
 {
@@ -13,7 +13,7 @@ export async function getMovies(keyword, year , page = 1)
 
     if(!res || !res.data || res.data.Response === 'False')
     {
-        console.error('記事覧の取得に失敗しました');
+        console.error('error');
         return []
     }
     return res.data

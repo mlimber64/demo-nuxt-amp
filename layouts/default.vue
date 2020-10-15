@@ -1,8 +1,8 @@
 <template>
     <div class="app">
-      <toolbar/>
+      <toolbar />
       <div class="content">
-        <nuxt/>
+        <nuxt />
       </div>
     </div>
 </template>

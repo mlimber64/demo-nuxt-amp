@@ -4,13 +4,13 @@
             <div class="t-btn t-btn-desktop" role="button" tabindex="1" on="tap:AMP.navigateTo(url='/')">
                 HOME
             </div>
-            <div class="t-btn t-btn-desktop" role="button" tabindex="2" on="tap:AMP.navigateTo(url='/series')">
+            <div class="t-btn t-btn-desktop" role="button" tabindex="2" on="tap:AMP.navigateTo(url='/api')">
                 LISTA
             </div>
             <div class="t-btn t-btn-mobile" role="button" tabindex="1" on="tap:AMP.navigateTo(url='/')">
                 <fa-icon class="icon" :icon="['fas','home']"/>
             </div>
-            <div class="t-btn t-btn-mobile" role="button" tabindex="1" on="tap:AMP.navigateTo(url='/series')">
+            <div class="t-btn t-btn-mobile" role="button" tabindex="1" on="tap:AMP.navigateTo(url='/api')">
                 <fa-icon class="icon" :icon="['fas', 'th-large']" />
             </div>
         </div>

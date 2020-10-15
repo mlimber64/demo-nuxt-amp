@@ -4,7 +4,7 @@
     <div class="content-wrapper">
       <br>
       <h1 class="title">PÁGINA AMP</h1>
-      <input type="text" placeholder="Ingrese Filtro"/>
+      <input type="text" class="input" placeholder="Ingrese Filtro"/>
       <button>Buscar</button>
       <br>
       <br>
@@ -59,6 +59,7 @@ export default {
   .parrafo
 {
   border-left: 6px solid #4da6ff;
+  text-align: center;
 }
 amp-carousel {
   margin: 0;
@@ -68,7 +69,7 @@ amp-img
     margin: 5px;
 }
 .input {
-  text-align: align-self;
+  text-align: left;
 }
 .content-wrapper {
   padding: 60px 60px;
