@@ -1,5 +1,5 @@
 import axios from 'axios'
-const baseURL = `https://www.omdbapi.com/?apikey=7f517297`
+const baseURL = `https://www.omdbapi.com/?apikey=${process.env.apiKey}`
 
 export async function getMovies(keyword, year , page = 1)
 {
@@ -7,7 +7,7 @@ export async function getMovies(keyword, year , page = 1)
 
     const offset = page || 1
 
-    const url = `${baseURL}&type=movie&s=${keyword}&y=${year}&page=${offset}`
+    const url = `${baseURL}&type=movie=${keyword}&y=${year}&page=${offset}`
 
     const res = await axios.get(url)
 
@@ -22,5 +22,5 @@ export async function getMovies(keyword, year , page = 1)
 export function getUrl(keyword, page = 1)
 {
     const offset = page || 1
-    return `${baseURL}&type=movie&s=${keyword}&page=${offset}`
+    return `${baseURL}&type=movie=${keyword}&page=${offset}`
 }

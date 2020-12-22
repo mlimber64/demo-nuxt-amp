@@ -3,7 +3,7 @@
         <div class="content-wrapper">
             <h1 class="title">PELICULAS</h1>
             <div class="pagination-wrapper">
-              <!--pagination :current-page="currentPage" :total-items="totalItems" :rows-per-page="rowsPerPage" /-->
+              <pagination :current-page="currentPage" :total-items="totalItems" :rows-per-page="rowsPerPage" />
             </div>
             <amp-list
               src="https://www.omdbapi.com/?apikey=7f517297&type=movie&s=man&page=1"
@@ -20,12 +20,12 @@
 </template>
 
 <script>
-//import Pagination from "@/components/Pagination.vue";
+import Pagination from "@/components/Pagination.vue";
 import { getMovies, getUrl } from "@/libs/apiClient.js";
 
 export default {
   components: {
-    //Pagination
+    Pagination
   },
   data() {
     return {
